@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="io.tylerstone.prm.support.TextEditorActivity"
+    tools:showIn="@layout/activity_text_editor">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Add a note..."
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="@android:color/transparent"
+        android:padding="16dp">
+    </EditText>
+
+</RelativeLayout>

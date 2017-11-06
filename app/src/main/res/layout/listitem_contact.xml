@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listitem_contact_swipelayout">
+    <LinearLayout
+        android:id="@+id/listitem_contact_swipeview_bottom"
+        android:layout_width="165dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark">
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--app:srcCompat="@drawable/flag"-->
+            <!--android:tint="@android:color/white"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/imageView2" />-->
+            <ImageButton
+                android:id="@+id/flag_interaction_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/flag"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark">
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--app:srcCompat="@drawable/snooze"-->
+            <!--android:tint="@android:color/white"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/imageView3" />-->
+            <ImageButton
+                android:id="@+id/snooze_interaction_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/snooze"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark">
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--app:srcCompat="@drawable/add"-->
+            <!--android:tint="@android:color/white"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/imageView4" />-->
+            <ImageButton
+                android:id="@+id/note_interaction_btn"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/add"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/frameLayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/account"
+                android:tint="@color/colorAccent"
+                android:id="@+id/imageView" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name Last Name"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:text="Employer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_job_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

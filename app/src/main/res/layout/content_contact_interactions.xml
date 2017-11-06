@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_contact_interactions"
+    tools:context="io.tylerstone.prm.contact.ContactInteractionsActivity">
+
+    <ScrollView
+        android:id="@+id/interactions_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/list_interactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Keep the conversation going..."
+            android:paddingBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+            <Button
+                android:id="@+id/new_note_interaction_btn"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Note"
+                android:padding="3dp"
+                android:drawableTop="@drawable/note"
+                android:drawableTint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:onClick="newNoteInteraction"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
